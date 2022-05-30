@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=+, initial-scale=1.0">
+    <title>Modelo de Caixas
+    </title>
+    <style>
+        h1 {
+            /* para transformar uma box-level em inline-level basta usar dispaly: inline;*/
+            background-color: lightgray;
+            height: 300px;
+            width: 300px;
+
+            /*
+            border-width: 10px;
+            border-style: solid;
+            border-color: lightslategray;
+            */
+            
+
+            border: 10px solid lightslategrey;
+
+            /*
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            */
+            
+            padding: 10px 10px 10px 10px; 
+            
+            /* caso todos os lados tenhão a mesma medida você pode deixar apenas um "10px"*/
+
+            /*
+             margin-top: 20px;
+            margin-right: 20px;
+            margin-bottom: 40px;
+            margin-left: 20px;
+            */
+
+            margin: 20px auto 40px auto; /*usando auto no lugar do px ele automaticamente calcula e centraliza*/
+           
+
+           /*margin: auto;*/ 
+
+           /*
+           outline-width: 5px;
+           outline-style: dashed;
+           outline-color: blueviolet;
+           */
+           
+
+           outline: 5px dashed salmon;
+
+        }
+
+        a {
+            /* para transformar uma inline-level em box-level basta usar dispaly: block;  // e display: inline-block  */
+
+            border-width: 10px;
+            border-style: solid;
+            border-color: red;     
+            
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplos de caixa box-level</h1>
+    <p>Parágrafos também são exemplos de box-level, mas <a href="#">Links são exemplos de caixas inline-level</a>. Vamos ver como tudo isso funciona.</p>
+</body>
+</html>
