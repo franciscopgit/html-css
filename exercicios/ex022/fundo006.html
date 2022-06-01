@@ -8,16 +8,29 @@
     <style>
         body {
             height: 100vh;
-            background-color: black;
+           /* background-color: black;
             background-image: url('imagens/wallpaper002.jpg');
             background-position: center top;
             background-repeat: no-repeat;
-            background-size: cover; /* auto, 100% contein, cover*/
+            background-size: cover; "auto, 100% contein, cover"
+            background-attachment: fixed; */
+
+            /* Shorthand - background
+                color > image > position > repeat > [size] > attachment
+            
+            por mais que o background-size: ; esteja na documentação como compativél com shorthand, ao usar ele no navegador.. acaba não sendo compativél. 
+            então deve ser declarado separadamente
+                */
+
+            background: black url('imagens/wallpaper002.jpg') center center no-repeat fixed;
+
+            background-size: cover;
+
         }
 
         main {
             background-color: white;
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             margin: auto;
             border: 2px solid black;
@@ -29,6 +42,8 @@
     <main>
         <h1>Teste de imagem</h1>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus accusantium totam est, libero voluptas sit! Adipisci molestiae, expedita accusamus est, accusantium aperiam, praesentium quos enim ad animi autem distinctio obcaecati? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio nesciunt, voluptas non sequi nulla doloremque accusamus corrupti quasi obcaecati nemo ipsam adipisci incidunt dolorem porro reiciendis beatae nisi libero architecto? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis adipisci nihil pariatur quos consequatur rem eaque porro officia nisi dolore ullam voluptates earum quibusdam, atque quod repellat amet omnis magni.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia sint veniam nobis, error omnis id? Voluptate quidem mollitia sit nihil dignissimos consectetur magnam dolore ullam necessitatibus! Cumque ducimus nisi neque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure voluptas non dolorum pariatur, harum sit, delectus beatae dolor ratione quos labore quidem! Officiis perferendis repellendus recusandae qui. Nisi, ipsam! Quo!</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit reprehenderit ab consequatur. Labore fugit iure aperiam suscipit rem aliquid voluptates recusandae? Voluptas exercitationem doloribus incidunt. Ratione pariatur rem eius voluptates! Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus nulla consequatur quisquam, quaerat veritatis recusandae aliquid molestias mollitia, repudiandae sed sequi est nesciunt minima odio? Culpa ducimus provident laborum doloremque?</p>
     </main>
 </body>
 </html>
